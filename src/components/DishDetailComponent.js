@@ -17,8 +17,8 @@ const DishDetailComponent = (props) => {
             });
             return(
                 <div className="container">
-                    <div className="row mt-5">
-                        <div className = "col-12 col-md-5">
+                    <div className="row">
+                        <div className = "col-12 col-md-5 m-3">
                             <Card>
                                 <CardImg src = {props.dish.image} alt={props.dish.name}/>
                                 <CardBody>
@@ -32,7 +32,7 @@ const DishDetailComponent = (props) => {
                             </Card>
                         </div>
 
-                        <div className = "col-12 col-md-5">
+                        <div className = "col-12 col-md-5 m-3">
                             <h4>Comments</h4>
                             {comments}
                         </div>
